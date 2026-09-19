@@ -68,7 +68,7 @@ const sessionOptions={
 }
 
 app.get("/",(req,res)=>{
-    res.send("api is working");
+    res.redirect("/listing");
 });
 
 app.use(session(sessionOptions));
